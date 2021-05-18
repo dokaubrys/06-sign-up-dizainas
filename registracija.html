@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registracija</title>
+    <style>
+        html {
+            height: 100%;
+        }
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #657AD3;
+        }
+
+       .container {
+            position: absolute;
+            top: 50%;
+            width: 800px;
+            transform: translateY(-50%);
+            
+        }
+        .left-column {
+            background-color: transparent;
+            width: 40%;
+            float: left;
+            height: 484px;
+            
+        }
+        .right-column {
+            background-color: #FFFFFF;
+            width: 60%;
+            float: left;
+            height: 484px;
+        }
+        .left-column-container {
+            display: block;
+            height: 424px;
+            margin-top: 30px;
+            background-color: violet;
+            background: transparent url('pics/kalnas.jpg') 0% 0% no-repeat padding-box;
+            background-size: cover;
+            position:relative;
+            padding-left: 40px;
+        }
+        h1 {
+            margin: 0;
+            padding-top: 32px;
+            font: normal normal normal 32px/37px Gill Sans MT;
+            color: #FFFFFF;
+            letter-spacing: 0px;
+        }
+        p, a {
+            display: inline-block;
+            margin: 0;
+            font: normal normal normal 16px/19px Gill Sans MT;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+        }
+        .links {
+            position: relative;
+            top: 75%;
+        }
+        .right-column-container {
+            display: inline-grid;
+            height: 73.76%;
+            padding-left: 60px;
+            padding-top: 46px;
+            position: relative;
+        }
+        .bottom {
+            position: relative;
+            height: 82px;
+            padding-left: 60px;
+            /* justify-content: stretch; */
+        }
+        label {
+            font: normal normal normal 13px/15px Gill Sans MT;
+            float: left;
+            height: 20px;
+        }
+        /* b {
+            
+            background-color: #000000;
+            font: normal normal normal 13px/15px Gill Sans MT;
+            letter-spacing: 0px;
+        } */
+        .username {
+            position: fixed;
+            top: 73px;
+        }
+        .email{
+            position: fixed;
+            top: 161px;
+        }
+        .password {
+            position: fixed;
+            top: 248px;
+        }
+        .rpassword {
+            position: fixed;
+            top: 336px; 
+        }
+        .username, .email, .password, .rpassword {
+            border: none;
+            border-bottom: solid #A9A9A9;
+            width: 360px;
+            padding-bottom: 5px;
+            font: normal normal normal 18px/21px Gill Sans MT;
+            letter-spacing: 0px;
+            color: #A9A9A9;
+            outline: none;
+        }
+        .or {
+            font: normal normal normal 18px/21px Gill Sans MT;
+            letter-spacing: 0px;
+            color: #000000;
+            padding-left: 14px;
+            margin-bottom: 57px;
+        }
+        .btn {
+            background: #FFC0CB 0% 0% no-repeat padding-box;
+            border: none;
+            padding-top: 8.5px;
+            padding-bottom: 10.5px;
+            padding-left: 40px;
+            padding-right: 42px;
+            border-radius: 40px; 
+            font: normal normal normal 18px/21px Gill Sans MT;
+            color: #FFFFFF;
+            box-shadow: 0 5px 8px darkgrey;
+        }
+        .btn:hover {
+            cursor: pointer;
+            box-shadow: 0 5px 8px grey;
+        }
+        .sign-in {
+            font: normal normal normal 18px/21px Gill Sans MT;
+            letter-spacing: 0px;
+            color: #00008B;
+            padding-left: 24px;
+        } 
+        .x {
+            position: absolute;
+            top: 14px;
+            right: 23px;
+            font: normal normal normal 30px/35px Gill Sans MT;
+            color: #000000;
+            cursor: pointer;
+        }
+
+        @media all and (max-width: 720px) {
+            .left-column {
+                width: 100%;
+            }
+            .right-column {
+                width: 100%;
+            }
+            .left-column-container {
+                display: inline-flex;
+                width: 100%;
+            }
+            .right-column-container {
+                display: inline-grid;
+                width: 100%;
+            }
+            .username, .email, .password, .rpassword {
+                display: inline-grid;
+                position: absolute;
+            }
+            .x {
+                position: relative;
+                
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class='container'>
+        
+            <div class='left-column'>
+                <div class='left-column-container'>
+                    <h1>Sign up</h1>
+                    <div class='links'>
+                        <a href='#'>Privacy policy</a>
+                        <p>&</p>
+                        <a href='#'>terms of service</a>
+                    </div>
+                </div>
+            </div>
+        
+        
+        <div class='right-column'>
+            <span class='x'>x</span>
+            <div class='right-column-container'>
+               <label for='username'><b>USERNAME</b></label>
+                <input class='username' type='text' placeholder='Enter your username' name='username' required>
+
+                <label for='E-mail'><b>E-MAIL</b></label>
+                <input class='email' type='text' placeholder='Enter your E-mail' name='Email' required>
+
+                <label for='password'><b>PASSWORD</b></label>
+                <input class='password' type='text' placeholder='Enter your password' name='password' required>
+
+                <label for='password'><b>REPEAT PASSWORD</b></label>
+                <input class='rpassword' type='text' placeholder='Reapeat your password' name='password' required> 
+            </div>
+            <div class='bottom'>
+                <button class='btn'>Get Started</button>
+                <p class='or'>or</p>
+                <a class='sign-in' href='#'>Sign in</a>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

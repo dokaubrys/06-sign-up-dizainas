@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 variantas (maketo dizainas)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            font-family: 'Poppins', sans-serif;
+            width: 1920px;
+        }
+        body {
+            max-width: 1920px;
+            /* margin: 0; */
+            
+        }
+        .container-top {
+            width: 100%;
+            height: 1000px;
+            background-color: #0000004F;
+        }
+
+        .header {
+            display: inline-flex;
+           width: 100%;
+           height: 151px;
+           margin: 0;
+           position: relative;
+           /* border-bottom: 1px solid #FFFFFF; */
+           
+        }
+        .menu {
+            display: inline-flex;
+            margin-top: 64px;
+            margin-left: 434px;
+            width: 40,05%;
+            height: 34px;
+        }
+        .menu-text {
+            /* padding-right: 50px; */
+            margin-right: 50px;
+            margin-top: 0;
+            padding-bottom: 30px;
+            color: #FFFFFF;
+            font-size: 17px;
+        }
+        .menu-text:hover {
+            cursor: pointer;
+            color: #f0f0f0;
+            border-bottom: 3px solid #FFFFFF;
+            
+            
+            
+        }
+        .ru-en  {
+            display: inline-flex;
+            height: 24px;
+            width: 3.64%; 
+            padding-top: 64px;
+            font-size: 17px;
+            
+        }
+        .ru, .en {
+            padding: 0;
+        }
+        #ru {
+            margin-right: 25px;
+            color: #FFFFFF80 !important;
+        }
+        #contacts {
+            padding:0;
+            margin-right: 372px;
+            padding-bottom: 30px;
+        }
+        .kvadrt {
+            width: 3.38%;
+            height: 65px;
+            background-color: #446CCD;
+            position: absolute;
+            top: 43px;
+            right: 163px;
+        }
+        .fa {
+            position: absolute;
+            top:23px;
+            left:23px;
+            color: #FFFFFF;
+        }
+        .fa:hover {
+            cursor: pointer;
+            color:#FFFFFF80;
+        }
+        hr {
+            width: 83.33%;
+            color: #FFFFFF;
+        }
+        #services {
+            margin-right: 50px;
+            
+            
+        }
+        .about {
+            margin-left: 50px;
+            
+        }
+        .text1 {
+            display: inline-block;
+            width: 39.63%;
+            height: 384px;
+            padding-left: 158px;
+            padding-top: 142px;
+        }
+        h1 {
+            /* letter-spacing: 0; */
+            color: #FFFFFF;
+            font-size: 76px;
+            margin: 0;
+            font-weight: 800;
+        }
+        .text-p {
+            color: #FFFFFF;
+            font-size: 19px;
+        }
+        .btn {
+            
+            background-color: #446CCD;
+            height: 65px;
+            width: 27.59%;
+            color: #FFFFFF;
+            font-size: 15px;
+            margin: 0;
+            cursor: pointer;
+            border: none;
+            font-family: 'Poppins', sans-serif;
+        }
+        .row {
+            display: inline-flex;
+            width: 83.33%;
+            height: 400px;
+            background-color: transparent;
+            margin-left: 158px;
+            margin-top: 133px;
+        }
+        .row-col-left {
+            width: 33.33%;
+            height: 100%;
+            background-color: #385BB2;
+            
+        }
+        .row-col-md {
+            width: 33.33%;
+            height: 100%;
+            background-color: #446CCD;
+            
+        }
+        .row-col-right {
+            width: 33.33%;
+            height: 100%;
+            background-color: #F8F8F8;
+        }
+        img {
+            margin-top: 62px;
+            margin-left: 50px;
+        }
+        #img-line {
+            background-color: #FFFFFF26;
+            margin-top: 30px;
+        }
+        #img-line1 {
+            background-color: #06060626;
+            margin-top: 30px;
+            height: 1px;
+        }
+        .head-text {
+            color: #FFFFFF;
+            font-size: 27px;
+            line-height: 40px;
+            font-weight: 800;
+            padding-left: 50px;
+        }
+        .md-text {
+            color: #FFFFFF;
+            font-size: 19px;
+            line-height: 34px;
+            padding-left: 50px;
+        }
+        .bott-text {
+            color: #FFFFFF;
+            font-size: 15px;
+            line-height: 23px;
+            margin-left: 50px;
+            font-weight: 900;
+            padding-bottom: 5px;
+            border-bottom: 3px solid #FFFFFF;
+            width: 19.5%;
+        }
+        .bott-text1 {
+            color: #FFFFFF;
+            font-size: 15px;
+            line-height: 23px;
+            margin-left: 50px;
+            font-weight: 900;
+            padding-bottom: 5px;
+            border-bottom: 3px solid #FFFFFF;
+            width: 16.8%;
+        }
+        .head-text1 {
+            color: #060606;
+            font-size: 27px;
+            line-height: 40px;
+            letter-spacing: 0px;
+            padding-left: 50px;
+            font-weight: 800;
+        }
+        .working-hours-box {
+            width: 83.33%;
+            padding-left: 50px;
+            /* display: inline-flex; */
+        }
+        .days {
+            display: inline-grid;
+            height: 113px;
+        }
+        .valandos {
+            display: inline-grid;
+            float: right;
+            height: 113px;
+        }
+        .days > p {
+            margin: 0;
+            /* margin-bottom: 17px; */
+            color: #6C6C6C; 
+            font-size: 19px;
+            line-height: 34px;
+            
+        }
+        .valandos > p {
+            margin: 0;
+            /* margin-bottom: 17px; */
+            color: #6C6C6C; 
+            font-size: 19px;
+            line-height: 34px;
+            text-align: right;
+        }
+        .row2 {
+            display: inline-flex;
+            background-color: transparent;
+            width: 83.33%;
+            height: 337px;
+            margin-top: 151px;
+            margin-left: 160px;
+            position: relative;
+        }
+        .row2-left-column {
+            width: 40%;
+            height: 100%;
+            margin: 0;
+        }
+        .row2 > .row2-left-column > #signature {
+            position: absolute;
+            bottom: 0;
+            margin: 0 auto;
+        }
+        .row2 > .row2-left-column > h2 {
+            margin: 0;
+            color: #060606;
+            font-size: 39px;
+            line-height: 56px;
+            font-weight: 800;
+        }
+        .row2 > .row2-left-column > p {
+            padding-left: 275px;
+            margin: 0;
+            color: #000000B3;
+            font-size: 17px;
+            line-height: 34px;
+        }
+        .row2 > .row2-left-column > h4 {
+            padding-left: 275px;
+            padding-top: 46px;
+            font-size: 23px;
+            color: #060606;
+            line-height: 34px;
+            margin: 0;
+        }
+        .row2 > .row2-right-column{
+            float: left;
+            width: 60%;
+            height: 100%;
+        }
+
+
+        .row2 > .row2-right-column > p {
+            color: #6C6C6C;
+            font-size: 19px; 
+            line-height: 34px;
+            margin: 0;
+            padding-left: 64px;
+            padding-bottom: 39px;
+        }
+        .btn2 {
+            background-color: #446CCD;
+            height: 65px;
+            width: 21.875%;
+            padding-left: 41px;
+            padding-right: 41px;
+            padding-top: 23px;
+            padding-bottom: 23px;
+            text-align: center;
+            font-size: 15px;
+            color: white;
+            margin: 0;
+            margin-left:64px;
+            cursor: pointer;
+            border: none; 
+        }
+        .row3 {
+            display: inline-flex;
+            background-color: transparent;
+            width: 83.33%;
+            height: 205px;
+            margin-top: 151px;
+            margin-left: 160px;
+            position: relative;
+        }
+        .row3 > .row3-left-col {
+            width: 33.33%;
+        }
+        .row3 > .row3-left-col > h2 {
+            color: #060606;
+            font-size: 39px;
+            line-height: 56px;
+            font-weight: 800;   
+        }
+        .row3 > .row3-md-col {
+            width: 33.33%
+        }
+        .row3 > .row3-right-col {
+            width: 33.33%
+        }
+        .row3 > .row3-md-col > p {
+            color: #6C6C6C;
+            font-size: 19px;
+            line-height: 34px;
+            letter-spacing: 0px;
+            padding-right: 50px;
+        }
+        .row3 > .row3-right-col > p {
+            color: #6C6C6C;
+            font-size: 19px;
+            line-height: 34px;
+            letter-spacing: 0px;
+            
+        }
+        .row3 > .row3-md-col > h4 {
+            color: #060606;
+            font-size: 27px;
+            line-height: 40px;
+            letter-spacing: 0px;
+        }
+        .row3 > .row3-right-col > h4 {
+            color: #060606;
+            font-size: 27px;
+            line-height: 40px;
+            letter-spacing: 0px;
+        }
+        .row3-left-col > hr {
+            width: 90%;
+            margin: 0;
+            color: #D4D4D4;
+            font-weight: 1px;
+        }
+        .row3-md-col > hr {
+            width: 90%;
+            margin: 0;
+            color: #D4D4D4;
+        }
+        .row3-right-col > hr {
+            width: 90%;
+            margin: 0;
+            color: #D4D4D4;
+        }
+        .footer {
+            width: 100%;
+            height: 800px;
+            background-color: #0000004F;
+            margin-top: 147px;
+
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class='container-top'>
+        <div class='header'>
+            <div class='menu'>
+                <p class='menu-text' id='services'>SERVICES</p>
+                <p class='menu-text' class='about'>ABOUT US</p>
+                <p class='menu-text' >OUR TEAM</p>
+                <p class='menu-text' >TESTIMONIALS</p>
+                <p class='menu-text' >NEWS</p>
+                <p class='menu-text' id='contacts'>CONTACTS</p> 
+            </div>
+
+        <div class='ru-en'>
+            <p class='menu-text' id='ru'>RU</p>
+            <p class='menu-text' class='en'>EN</p>
+        </div>
+
+            <span class='kvadrt'><span class='fa fa-search'></span></span>
+        </div>
+
+        <hr>
+
+        <div class='text1'>
+            <h1>Let us brighten your smile!</h1>
+            <p class='text-p'>We are dental care clinic that helps people to take care of their health and we have best dental doctors in here.</p>
+            <button class='btn'>Learn More</button>
+        </div>
+
+        <div class='row'>
+            <div class='row-col-left'>
+                <img src=/img/Page-1.png alt=1><hr id='img-line'>
+                <p class='head-text'>Emergency Call</p>
+                <p class='md-text'>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+                <p class='bott-text'>CALL US NOW</p>
+            </div>
+
+            <div class='row-col-md'>
+                <img src=/img/dantis.png alt=2><hr id='img-line'>
+                <p class='head-text'>Where Are We?</p>
+                <p class='md-text'>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+                <p class='bott-text1'>SEE ON MAP</p>
+            </div>
+
+            <div class='row-col-right'>
+                <img src=/img/calendar.png alt=3><hr id='img-line1'>
+                <p class='head-text1'>Opening Hours</p>
+                <div class='working-hours-box'>
+                    <div class='days'>
+                        <p>Mon - Fri:</p>
+                        <p>Saturday: </p>
+                        <p>Sunday:</p>
+                    </div>
+                    <div class='valandos'>
+                        <p>8:00am - 7:00pm</p>
+                        <p>9:00am - 6:00pm</p>
+                        <p>Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='row2'>
+            <div class='row2-left-column'>
+                <h2>Choose Our Clinic, Choose The Best Care For Yourself and Your Family</h2>
+                <img id='signature' src='/img/signature.png' alt=4 height='127' width='214'>
+                <h4>Tom Henders</h4>
+                <p>Head Dentist</p>
+            </div>
+            <div class='row2-right-column'>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <button class='btn2'>See Our Services</button>
+            </div>
+        </div>
+        <div class='row3'>
+            <div class='row3-left-col'>
+                <hr>
+                <h2>Our Values</h2>
+            </div>
+            <div class='row3-md-col'>
+                <hr>
+                <h4>Quality</h4>
+                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            </div>
+            <div class='row3-right-col'>
+                <hr>
+                <h4>Health</h4>
+                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            </div>
+            
+        </div>
+        <div class='footer'></div>
+    </div>
+</body>
+</html>
